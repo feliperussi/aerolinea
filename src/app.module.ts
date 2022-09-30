@@ -26,7 +26,8 @@ import { CafeTiendaModule } from './cafe-tienda/cafe-tienda.module';
       dropSchema: true,
       synchronize: true,
       keepConnectionAlive: true
-    }), AirlineAirportModule, CafeModule,],
+    }),
+  ],
 
   controllers: [AppController],
   providers: [AppService],

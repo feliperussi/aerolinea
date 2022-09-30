@@ -1,6 +1,7 @@
 import { CafeEntity } from "../cafe/cafe.entity";
-import { Column, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
 
+@Entity()
 export class TiendaEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
@@ -13,7 +14,6 @@ export class TiendaEntity {
     
     @Column()
     phone: string;
-
 
     @ManyToMany(type => CafeEntity, cafe => cafe.tiendas)
     @JoinTable()

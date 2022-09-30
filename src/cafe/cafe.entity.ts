@@ -1,6 +1,7 @@
 import { TiendaEntity } from "src/tienda/tienda.entity";
-import { Column, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToMany, PrimaryGeneratedColumn } from "typeorm";
 
+@Entity()
 export class CafeEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string;
