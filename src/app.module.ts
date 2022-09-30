@@ -6,7 +6,7 @@ import { AirportModule } from './airport/airport.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AirportEntity } from './airport/airport.entity';
 import { AirlineEntity } from './airline/airline.entity';
-import { AirlineAirportModule } from './airline-airport/airline-airport.module';
+// import { AirlineAirportModule } from './airline-airport/airline-airport.module';
 import { CafeModule } from './cafe/cafe.module';
 import { TiendaModule } from './tienda/tienda.module';
 import { TiendaEntity } from './tienda/tienda.entity';
@@ -21,7 +21,7 @@ import { CafeTiendaModule } from './cafe-tienda/cafe-tienda.module';
       port: 5432,
       username: 'postgres',
       password: 'postgres',
-      database: 'airports',
+      database: 'parcial',
       entities: [AirlineEntity, AirportEntity, TiendaEntity, CafeEntity],
       dropSchema: true,
       synchronize: true,
